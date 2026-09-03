@@ -6,7 +6,7 @@
 
 **IP** stands for **Internet Protocol**.
 
-An **IP address** is a logical address assigned to a device on a network. It helps identify the source and destination of data so that information can reach the correct device.
+An **IP address** is a logical address assigned to a device on a network. It helps identify the **source and destination** of data so that information can reach the correct device.
 
 For example:
 
@@ -16,7 +16,7 @@ Phone  → 192.168.1.11
 TV     → 192.168.1.12
 ```
 
-If your laptop wants to send data to your phone, it needs to know the phone's network address.
+If a laptop wants to send data to a phone, it needs to know the phone's network address.
 
 ```text
 Laptop
@@ -28,9 +28,9 @@ Phone
 192.168.1.11
 ```
 
-The IP address helps the network understand:
+The IP address helps the network determine:
 
-> Where should this data go?
+> **Where should this data go?**
 
 ---
 
@@ -49,11 +49,11 @@ House Address
 Correct Person
 ```
 
-You need an address to make sure the letter reaches the correct destination.
+You need an address to ensure the letter reaches the correct destination.
 
 The same concept applies to computer networks.
 
-Imagine three computers:
+Imagine multiple computers connected to a network:
 
 ```text
 Computer A
@@ -63,7 +63,7 @@ Computer C
 
 If Computer A wants to send data specifically to Computer B, the network needs a way to identify Computer B.
 
-This is why addresses are needed.
+This is why devices need network addresses.
 
 ```text
 Computer A → 192.168.1.10
@@ -79,7 +79,7 @@ Destination: 192.168.1.20
 
 Therefore, the main purpose of an IP address is:
 
-> **To identify network destinations and allow data to be routed to the correct location.**
+> **To identify network destinations and help route data to the correct location.**
 
 ---
 
@@ -87,7 +87,7 @@ Therefore, the main purpose of an IP address is:
 
 An IP address is called a **logical address** because it is assigned based on the network configuration and can change.
 
-For example, the same laptop may have different IP addresses on different networks.
+For example, the same laptop can have different IP addresses on different networks.
 
 ### Home Wi-Fi
 
@@ -107,11 +107,11 @@ Laptop → 10.0.0.25
 Laptop → 192.168.43.5
 ```
 
-The laptop is still the same physical device, but its IP address changes depending on the network.
+The physical device remains the same, but its IP address can change depending on the network it connects to.
 
 Therefore:
 
-> **A logical address is an address assigned to a device based on its position in a network.**
+> **A logical address is an address assigned to a device based on its network configuration and location within a network.**
 
 ---
 
@@ -121,7 +121,7 @@ Therefore:
 
 > **Internet Protocol Version 4**
 
-IPv4 is one of the most widely used versions of the Internet Protocol.
+IPv4 is the fourth version of the Internet Protocol and is widely used for network communication.
 
 An IPv4 address looks like:
 
@@ -129,7 +129,7 @@ An IPv4 address looks like:
 192.168.1.10
 ```
 
-It contains four sections separated by dots.
+It consists of four sections separated by dots:
 
 ```text
 192 . 168 . 1 . 10
@@ -139,7 +139,7 @@ Octet Octet Octet Octet
 
 Each section is called an **octet**.
 
-An IPv4 address contains:
+Each octet contains **8 bits**:
 
 ```text
 4 Octets × 8 Bits = 32 Bits
@@ -153,7 +153,7 @@ Therefore:
 
 # Bits and Octets
 
-Computers communicate using binary values:
+Computers store and process information using binary values:
 
 ```text
 0 and 1
@@ -161,9 +161,13 @@ Computers communicate using binary values:
 
 Each binary digit is called a **bit**.
 
-An IPv4 address contains 32 bits.
+Since an IPv4 address contains four octets, and each octet contains 8 bits:
 
-Example:
+```text
+8 + 8 + 8 + 8 = 32 bits
+```
+
+For example:
 
 ```text
 192.168.1.10
@@ -192,40 +196,22 @@ Each group contains 8 bits:
 8 bits
 ```
 
-Since IPv4 has four groups:
-
-```text
-8 + 8 + 8 + 8 = 32 bits
-```
-
 ---
 
-# Why Each Octet Ranges from 0 to 255
+# Why Does Each Octet Range from 0 to 255?
 
-Each octet contains 8 bits.
+Each octet contains **8 bits**.
 
-The smallest binary value is:
+The smallest possible value is:
 
 ```text
-00000000
+00000000 = 0
 ```
 
-Which equals:
+The largest possible value is:
 
 ```text
-0
-```
-
-The largest binary value is:
-
-```text
-11111111
-```
-
-Which equals:
-
-```text
-255
+11111111 = 255
 ```
 
 Therefore, each octet can range from:
@@ -234,11 +220,11 @@ Therefore, each octet can range from:
 0 → 255
 ```
 
-For example:
+Examples of valid IPv4 addresses:
 
 ```text
-192.168.1.10   ✅ Valid
-10.0.0.1       ✅ Valid
+192.168.1.10
+10.0.0.1
 255.255.255.255
 ```
 
@@ -258,28 +244,22 @@ Because:
 
 # How Many IPv4 Addresses Are Available?
 
-IPv4 uses 32 bits.
+IPv4 uses **32 bits**.
 
-Each bit has two possible values:
+Each bit can have two possible values:
 
 ```text
 0 or 1
 ```
 
-Therefore:
+Therefore, the total number of possible IPv4 addresses is:
 
 ```text
-2³²
+2³² = 4,294,967,296
 ```
 
-Which equals:
-
-```text
-4,294,967,296
-```
-
-So IPv4 provides approximately:
+So, IPv4 provides approximately:
 
 > **4.3 billion possible addresses**
 
-However, not all IPv4 addresses are available for public use because some ranges are reserved for private networks and special purposes.
+However, not all IPv4 addresses are available for public use because some address ranges are reserved for **private networks and special purposes**.
