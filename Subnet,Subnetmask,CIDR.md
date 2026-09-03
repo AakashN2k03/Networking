@@ -134,3 +134,64 @@ Both describe the same thing:
 > Where the network portion ends and the host portion begins.
 
 ---
+# Public Subnet
+
+A **public subnet** is a subnet that has a route to an **Internet Gateway**, allowing resources to communicate with the internet.
+
+Example route:
+
+```text
+0.0.0.0/0 → Internet Gateway
+```
+
+A resource inside a public subnet receives a **private IP address** and can also be associated with a **public IP address**.
+
+```text
+Web Server
+
+Private IP → 10.0.1.10
+Public IP  → 54.x.x.x
+```
+
+Typical resources:
+
+* Web Servers
+* Load Balancers
+* Bastion Hosts
+
+---
+
+# Private Subnet
+
+A **private subnet** does not have a direct route to an **Internet Gateway**.
+
+Resources inside it are not directly accessible from the internet.
+
+Example:
+
+```text
+Private Subnet: 10.0.2.0/24
+
+Backend → 10.0.2.10
+Database → 10.0.2.20
+```
+
+Typical resources:
+
+* Backend Servers
+* Databases
+* Internal Services
+
+---
+
+# 🌍 Private IP Addresses
+
+Private networks commonly use the following IP ranges:
+
+| Range                           | CIDR             |
+| ------------------------------- | ---------------- |
+| `10.0.0.0 – 10.255.255.255`     | `10.0.0.0/8`     |
+| `172.16.0.0 – 172.31.255.255`   | `172.16.0.0/12`  |
+| `192.168.0.0 – 192.168.255.255` | `192.168.0.0/16` |
+
+---
