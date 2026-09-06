@@ -233,10 +233,12 @@ IP Address: 192.168.1.105
 Lease Time: 24 hours
 ```
 
-After that period, the device may:
+After that period, the device may try to renew the same ip if not receive new ip:
 
 * 🔄 Renew the same IP address
 * 🔀 Receive a different IP address
+
+- The IP may change if, for example, the device disconnects for a long time, the DHCP configuration changes, or the previous IP is no longer available.
 
 ---
 
@@ -254,45 +256,3 @@ After that period, the device may:
 | **Common Usage**            | Servers, Printers              | Laptops, Phones        |
 
 ---
-
-# 🎯 Quick Summary
-
-### 🔒 Static IP
-
-```text
-Device → Same IP → Same IP → Same IP
-```
-
-Best for devices and services that need to be **consistently reachable**.
-
-Examples:
-
-* Web Servers
-* Database Servers
-* Printers
-* CCTV Cameras
-
----
-
-### 🔄 Dynamic IP
-
-```text
-Device → IP A → IP B → IP A
-```
-
-The IP address is automatically assigned by **DHCP** and may change over time.
-
-Examples:
-
-* Laptops
-* Mobile Phones
-* Smart TVs
-* Other user devices
-
----
-
-> 💡 **Simple Rule:**
->
-> **Static IP = Fixed address for devices that must always be reachable.**
->
-> **Dynamic IP = Automatically assigned address for devices that can receive different IPs over time.**
