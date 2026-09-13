@@ -6,7 +6,7 @@
 
 It allows multiple devices in a private network to communicate with the Internet using a **public IP address**.
 
-```text
+```text 
 Private Network                    Internet
 
 Laptop → 192.168.1.10 ──┐
