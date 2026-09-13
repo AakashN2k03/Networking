@@ -356,3 +356,6 @@ This is possible because these are separate private networks.
 ## ⭐ Remember This
 
 > **NAT acts as a translator between a private network and the public Internet, allowing private devices to communicate externally while conserving public IPv4 addresses.**
+
+## NOTW
+> **Private IPs can be reused because they only need to be unique inside their own local network. Public IPs need global uniqueness because Internet routers need to know where to send packets.**
