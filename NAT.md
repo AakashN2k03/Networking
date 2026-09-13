@@ -352,39 +352,6 @@ This is possible because these are separate private networks.
 
 ---
 
-# 📌 Quick Summary
-
-```text
-NAT = Network Address Translation
-```
-
-### Why?
-
-```text
-IPv4 addresses are limited
-          ↓
-Use private IP addresses
-          ↓
-Need a way to access the Internet
-          ↓
-NAT
-```
-
-### Basic flow
-
-```text
-Private IP
-192.168.1.10
-      ↓
-    Router
-      ↓
-     NAT
-      ↓
-Public IP
-49.204.100.25
-      ↓
-   Internet
-```
 
 ## ⭐ Remember This
 
