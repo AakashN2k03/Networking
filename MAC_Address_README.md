@@ -1,6 +1,4 @@
-# MAC Address — Beginner-Friendly Notes
-
-## What is a MAC Address?
+# What is a MAC Address?
 
 **MAC Address (Media Access Control Address)** is a unique identifier associated with a network interface of a device.
 
@@ -454,6 +452,19 @@ Therefore:
 6 bytes × 8 bits
 = 48 bits
 ```
+
+### MAC Address Structure
+
+A traditional MAC address is **48 bits (6 bytes)**:
+
+```text
+A4 : 5E : 60 : 12 : AB : 9F
+└────── 24 bits ──────┘└─ 24 bits ─┘
+        OUI             Interface-specific
+```
+
+* **First 24 bits → OUI (Organizationally Unique Identifier)**: identifies the organization/manufacturer.
+* **Last 24 bits → Interface-specific**: identifies the specific network interface.
 
 ---
 
